@@ -43,6 +43,12 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 5);
   })
 
+  it('should clear click', function(){
+    calculator.numberClick(5);
+    calculator.clearClick();
+    assert.strictEqual(calculator.runningTotal,0);
+  })
+
 
 
 });

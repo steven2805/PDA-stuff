@@ -51,8 +51,9 @@ else
   end
 
   
-  if failures => 1
+  if failures == 1
     puts "Test Failed"
   else
     puts "Test Passed"
   end
+end 
