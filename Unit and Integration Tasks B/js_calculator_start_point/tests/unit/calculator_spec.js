@@ -49,6 +49,11 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal,0);
   })
 
+  it('should show operater', function(){
+    calculator.operatorClick("+");
+    
+    assert.strictEqual(calculator.previousOperator,"+");
+  })
 
 
 });
